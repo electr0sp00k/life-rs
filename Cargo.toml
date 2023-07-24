@@ -1,5 +1,5 @@
 [package]
-name = "blinky-rs"
+name = "life-rs"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,6 +9,10 @@ embedded-hal = "0.2.7"
 microbit-v2 = "0.13.0"
 rtt-target = "0.4.0"
 
+[dependencies.nanorand]
+version = "0.7.0"
+default-features = false
+
 [dependencies.panic-rtt-target]
 version = "0.1"
 features = ["cortex-m"]
@@ -16,3 +20,8 @@ features = ["cortex-m"]
 [dependencies.cortex-m]
 version = "0.7"
 features = ["inline-asm", "critical-section-single-core"]
+
+[features]
+default = ["pcg64"]
+wyrand = ["nanorand/wyrand"]
+pcg64 = ["nanorand/pcg64"]
