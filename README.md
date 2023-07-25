@@ -1,8 +1,9 @@
-# blinky-rs
-Bart Massey 2023
+# life-rs
+Teo Coffman, CS 510: Embedded Development with RUST
 
-This Rust app for the BBC micro:bit v2 is a bare-minimum
-blinky light program.
+This Rust app for the BBC micro:bit v2 is an implementaion of
+the game of life for 5x5 led display using the A and B buttons
+to provide some interactivity.
 
 Alternate branches:
 
