@@ -1,3 +1,7 @@
+//  TEO COFFMAN 2023
+//  CS 510: RUST EMBEDDED SYSTEMS
+//  PORTLAND STATE UNIVERSITY
+
 #![no_std]
 #![no_main]
 
